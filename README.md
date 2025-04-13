@@ -96,3 +96,11 @@ project-root/
 ├── tsconfig.json       # TypeScript configuration
 ├── vite.config.ts      # Vite configuration
 └── README.md           # Project documentation
+
+## TODO
+- [ ] Add icons for the chat responses
+- [ ] Make the gray line only appear when the chat is active
+- [ ] Create the entire backend
+- [ ] connect the backend to the frontend
+- [ ] add the share button and 3 dots
+
