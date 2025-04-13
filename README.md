@@ -71,3 +71,28 @@ Yes it is!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+
+## React reference because I am dumb
+
+project-root/
+├── node_modules/       # All installed dependencies (created by npm i)
+├── public/             # Static assets that don't need processing
+├── src/                # Source code - where most of your work happens
+│   ├── assets/         # Images, fonts, etc.
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Components that represent entire pages
+│   ├── hooks/          # Custom React hooks
+│   ├── context/        # React context providers
+│   ├── lib/            # Utility functions and helpers
+│   ├── styles/         # CSS/styling files
+│   ├── App.tsx         # Main application component
+│   ├── main.tsx        # Entry point of the application
+│   └── index.css       # Global styles
+├── .gitignore          # Files to ignore in git
+├── index.html          # HTML template
+├── package.json        # Project metadata and dependencies
+├── package-lock.json   # Exact dependency versions
+├── tsconfig.json       # TypeScript configuration
+├── vite.config.ts      # Vite configuration
+└── README.md           # Project documentation
