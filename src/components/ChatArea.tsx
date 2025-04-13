@@ -36,13 +36,17 @@ const ChatArea: React.FC<ChatAreaProps> = ({ onToggleSidebar }) => {
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     };
     
+    // Update messages state with the new user message
     setMessages(prev => [...prev, userMessage]);
     setIsProcessing(true);
     setStreamingContent('');
     
     try {
+      // Create a copy of the current messages plus the new user message
+      const currentMessages = [...messages, userMessage];
+      
       // Prepare messages for API in the format OpenAI expects
-      const apiMessages = messages.concat(userMessage).map(msg => ({
+      const apiMessages = currentMessages.map(msg => ({
         role: msg.role,
         content: msg.content
       }));
